@@ -14,6 +14,7 @@ homeassistant:
   temperature_unit: C
   time_zone: Europe/Dublin
   unit_system: metric
+  currency: GBP
 
 # Configure a default setup of Home Assistant (frontend, api, etc)
 default_config:
