@@ -5,18 +5,12 @@ homeassistant:
       trusted_networks:
         - 192.168.1.0/24
         - 192.168.2.0/24
-  external_url: !secret external_url
-    # - type: legacy_api_password
-    #   api_password: !secret http_password
 
   latitude: !secret latitude_home
   longitude: !secret longitude_home
-  elevation: 322
-  # Name of the location where Home Assistant is running
+  elevation: 3
   name: Home
-  # C for Celcius, F for Fahrenheit
   temperature_unit: C
-  # Pick yours from here: http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
   time_zone: Europe/Dublin
   unit_system: metric
 
