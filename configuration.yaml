@@ -1,4 +1,4 @@
-homeassistant:  
+homeassistant:
   auth_providers:
     - type: homeassistant
     - type: trusted_networks
@@ -19,9 +19,9 @@ homeassistant:
 # Configure a default setup of Home Assistant (frontend, api, etc)
 default_config:
 
-http: 
-  use_x_forwarded_for: true 
-  trusted_proxies: 
+http:
+  use_x_forwarded_for: true
+  trusted_proxies:
     - 192.168.1.0/24
 
 # Text to speech
