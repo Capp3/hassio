@@ -1,0 +1,8 @@
+{
+    "build_from": {
+        "i386": "phusion/baseimage:master-386",
+        "armv7": "phusion/baseimage:master-arm",
+        "aarch64": "phusion/baseimage:master-arm64",
+        "amd64": "phusion/baseimage:master-amd64"
+    }
+}

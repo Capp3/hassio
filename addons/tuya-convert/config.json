@@ -1,0 +1,16 @@
+{
+    "name": "Tuya Convert Instance",
+    "version": "0.0.1-alpha",
+    "slug": "tuya-convert",
+    "description": "A docker container for Tuya Convert",
+    "arch": [
+        "armv7",
+        "aarch64",
+        "amd64",
+        "i386"
+    ],
+    "startup": "application",
+    "boot": "auto",
+    "usb": "true",
+    "homeassistant_api": true
+}
