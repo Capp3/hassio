@@ -19,7 +19,6 @@ homeassistant:
 
 config:
 default_config:
-discovery:
 conversation:
 history:
 sun:
