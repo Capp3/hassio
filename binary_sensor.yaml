@@ -1,5 +1,5 @@
 ---
-binary_sensor:
+# binary_sensor:
   # Workday
   - platform: workday
     name: workday
