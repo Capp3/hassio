@@ -1,3 +1,4 @@
+---
 homeassistant:
   auth_providers:
     - type: homeassistant
@@ -5,10 +6,10 @@ homeassistant:
       trusted_networks:
         - 192.168.1.0/24
         - 192.168.2.0/24
-
   latitude: !secret latitude_home
   longitude: !secret longitude_home
-  internal_url: http://192.168.1.12
+  internal_url: !secret hassio_internal_url
+  external_url: !secret hassio_external_url
   elevation: 3
   name: Home
   temperature_unit: C
@@ -16,8 +17,13 @@ homeassistant:
   unit_system: metric
   currency: GBP
 
-# Configure a default setup of Home Assistant (frontend, api, etc)
+config:
 default_config:
+discovery:
+conversation:
+history:
+sun:
+system_health:
 
 http:
   use_x_forwarded_for: true
@@ -27,7 +33,27 @@ http:
 # Text to speech
 tts:
   - platform: google_translate
+    service_name: google_say
+    cache: true
+    cache_dir: /config/tts
+    time_memory: 300
+
+mqtt:
+  broker: 127.0.0.1
+  port: 1883
+  discovery: true
+  client_id: home-assistant-1
+  username: !secret mqtt_username
+  password: !secret mqtt_password
+  birth_message:
+    topic: 'homeassistant/status'
+    payload: 'online'
+  will_message:
+    topic: 'homeassistant/status'
+    payload: 'offline'
 
 automation: !include automations.yaml
 script: !include scripts.yaml
 scene: !include scenes.yaml
+binary_sensor: !include binary_sensor.yaml
+sensor: !include sensors.yaml
