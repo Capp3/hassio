@@ -17,6 +17,11 @@ homeassistant:
   unit_system: metric
   currency: GBP
 
+# ipv4:
+#   method: manual
+#   address: 192.168.1.13/16,192.168.1.1
+#   dns: 8.8.8.8;8.8.4.4
+
 config:
 default_config:
 conversation:
