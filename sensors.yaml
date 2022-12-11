@@ -6,3 +6,9 @@
     display_options:
       - 'time'
       - 'date'
+  
+  - platform: bitcoin
+    display_options:
+      - exchangerate
+      - trade_volume_btc
+      - market_price_usd
