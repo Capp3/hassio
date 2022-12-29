@@ -16,7 +16,7 @@ homeassistant:
   time_zone: Europe/Dublin
   unit_system: metric
   currency: GBP
-  country: GB
+  country: IE
 
 # ipv4:
 #   method: manual
