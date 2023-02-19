@@ -10,7 +10,7 @@ homeassistant:
   longitude: !secret longitude_home
   internal_url: !secret hassio_internal_url
   external_url: !secret hassio_external_url
-  elevation: 3
+  elevation: 14
   name: Home
   temperature_unit: C
   time_zone: Europe/Dublin
@@ -47,18 +47,18 @@ tts:
     time_memory: 300
 
 mqtt:
-  # broker: 127.0.0.1
-  # port: 1883
-  # discovery: true
-  # client_id: home-assistant-1
+  broker: 198.168.1.252
+  port: 1883
+  discovery: true
+  client_id: home-assistant-1
   # username: !secret mqtt_username
   # password: !secret mqtt_password
-  # birth_message:
-  #   topic: 'homeassistant/status'
-  #   payload: 'online'
-  # will_message:
-  #   topic: 'homeassistant/status'
-  #   payload: 'offline'
+  birth_message:
+    topic: 'homeassistant/status'
+    payload: 'online'
+  will_message:
+    topic: 'homeassistant/status'
+    payload: 'offline'
 
 automation: !include automations.yaml
 script: !include scripts.yaml
