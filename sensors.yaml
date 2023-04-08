@@ -1,7 +1,5 @@
 ---
 # sensor:
-  - platform: moon
-
   - platform: time_date
     display_options:
       - 'time'
