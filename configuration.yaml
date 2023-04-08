@@ -47,18 +47,18 @@ tts:
     time_memory: 300
 
 mqtt:
-  broker: 198.168.1.252
+  broker: 198.168.1.253
   port: 1883
   discovery: true
   client_id: home-assistant-1
   # username: !secret mqtt_username
   # password: !secret mqtt_password
-  birth_message:
-    topic: 'homeassistant/status'
-    payload: 'online'
-  will_message:
-    topic: 'homeassistant/status'
-    payload: 'offline'
+  # birth_message:
+  #   topic: 'homeassistant/status'
+  #   payload: 'online'
+  # will_message:
+  #   topic: 'homeassistant/status'
+  #   payload: 'offline'
 
 my:
 
