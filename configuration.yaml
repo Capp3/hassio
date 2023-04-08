@@ -18,11 +18,7 @@ homeassistant:
   currency: GBP
   country: IE
 
-# ipv4:
-#   method: manual
-#   address: 192.168.1.13/16,192.168.1.1
-#   dns: 8.8.8.8;8.8.4.4
-
+my:
 config:
 default_config:
 conversation:
@@ -59,8 +55,6 @@ mqtt:
   # will_message:
   #   topic: 'homeassistant/status'
   #   payload: 'offline'
-
-my:
 
 automation: !include automations.yaml
 script: !include scripts.yaml
