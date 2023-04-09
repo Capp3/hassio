@@ -42,11 +42,11 @@ tts:
     cache_dir: /config/tts
     time_memory: 300
 
-mqtt:
-  broker: 198.168.1.253
-  port: 1883
-  discovery: true
-  client_id: home-assistant-1
+# mqtt:
+#   broker: 198.168.1.253
+#   port: 1883
+#   discovery: true
+#   client_id: home-assistant-1
   # username: !secret mqtt_username
   # password: !secret mqtt_password
   # birth_message:
